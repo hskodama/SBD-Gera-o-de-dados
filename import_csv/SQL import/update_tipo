@@ -1,0 +1,10 @@
+WITH subquery AS (
+    select count(*) soma, classificacao 
+	from visto
+	group by classificacao
+	order by classificacao asc
+)
+UPDATE tipo_visto
+SET quantidade = subquery.soma
+FROM subquery
+WHERE tipo_visto.tipo = subquery.classificacao;

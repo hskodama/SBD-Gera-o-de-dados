@@ -1,0 +1,2 @@
+COPY visto(rne, classificacao, data_exped, data_expir, data_entr)
+FROM '/Users/hskodama/Documents/SBD/Projeto integrado/import_csv/csv/visto_updated.csv' DELIMITER ',' CSV HEADER;

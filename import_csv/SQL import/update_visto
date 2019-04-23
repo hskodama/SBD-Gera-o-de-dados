@@ -1,0 +1,8 @@
+WITH subquery AS (
+    select tipo, tempo_limite 
+	from tipo_visto
+)
+UPDATE visto
+SET data_expir = data_exped + subquery.tempo_limite
+FROM subquery
+WHERE classificacao = subquery.tipo

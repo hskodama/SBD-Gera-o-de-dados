@@ -1,0 +1,2 @@
+COPY tipo_visto(tipo, nome, tempo_limite, quantidade, descricao)
+FROM '/Users/hskodama/Documents/SBD/Projeto integrado/import_csv/csv/tipo.csv' DELIMITER ',' CSV HEADER;

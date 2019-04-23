@@ -1,0 +1,2 @@
+COPY pessoa(rne, nome, nome_pai, nome_mae, nacionalidade, estado_mora, passaporte, data_exped, data_expir) 
+FROM '/Users/hskodama/Documents/SBD/Projeto integrado/import_csv/csv/pessoa_deduped.csv' DELIMITER ',' CSV HEADER;
